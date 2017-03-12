@@ -1,0 +1,31 @@
+._ocaml {
+  pre, code {
+    font-size: 0.8rem;
+  }
+  pre pre {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sig_block {
+    margin-left: 1rem;
+  }
+  p {
+    margin: 1em 0;
+  }
+  .code {
+    color: $textColorLight;
+  }
+  .string, .keyword {
+    color: $textColorRed;
+  }
+  .typetable {
+    border: none;
+    td {
+      border: none;
+    }
+  }
+  h6 {
+    @extend %block-heading;
+  }
+}

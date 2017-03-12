@@ -17,7 +17,7 @@ module Docs
         css('pre').each do |node|
           name_nodes = node.css('span')
           next unless name_nodes
-          name_node = name_nodes[0]
+          name_node = name_nodes[0].dup
           name_node.css('.keyword').remove
           name = name_node.content.strip
           id = name_node['id']
